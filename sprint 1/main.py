@@ -1,5 +1,5 @@
 import pyxel
-from constantes import ANCHO_VENTANA, ALTO_VENTANA
+from constantes import ANCHO_PANTALLA, ALTO_PANTALLA, ESCALA_PANTALLA
 from cocina import Cocina
 
 
@@ -8,7 +8,12 @@ class Juego:
 
     def __init__(self):
         # Inicializar la ventana con las dimensiones definidas en constantes.py
-        pyxel.init(ANCHO_VENTANA, ALTO_VENTANA, title="Service Rush")
+        pyxel.init(
+            ANCHO_PANTALLA, 
+            ALTO_PANTALLA, 
+            title="Service Rush",
+            display_scale=ESCALA_PANTALLA
+        )
         # Crear la cocina con todas sus estaciones y chefs
         self.__cocina = Cocina()
         # Iniciar el bucle principal de Pyxel (update y draw)
@@ -25,4 +30,3 @@ class Juego:
 
 if __name__ == "__main__":
     Juego()
-    

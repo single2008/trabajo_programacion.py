@@ -29,23 +29,23 @@ MAPA_COCINA = [["C_CEB", "C_HUE", "C_CHO", "C_LEC", "TAB", "C_PIM", "BAT", "HO",
 RECETAS = {
    "gazpacho": {
         "aparato": "BAT",
-        "ingredientes": ["tomate_cortado", "cebolla_cortda"],
+        "ingredientes": ["tomate_cortado", "cebolla_cortada"],
         "puntos": 10,
-        "penalización": 5,
+        "penalizacion": 5,
         "tiempo": 48
 },
 "tortilla": {
         "aparato": "SA",
         "ingredientes": ["patata_cortada", "cebolla_cortada", "huevo"],
         "puntos": 12,
-        "penalización": 6,
+        "penalizacion": 6,
         "tiempo": 60
 },
 "huevos_chorizo": {
         "aparato": "SA",
         "ingredientes": ["huevo", "patata_cortada", "chorizo_cortado"],
         "puntos": 12,
-        "penalización": 6,
+        "penalizacion": 6,
         "tiempo": 60
 },
 "ensalada_mixta": {
