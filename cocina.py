@@ -8,7 +8,7 @@ class Cocina:
     """Gestiona el estado general de la partida, el tablero de estaciones y los chefs."""
 
     def __init__(self):
-        # Construir la matriz de 9x12 elementos Estacion leyendo el mapa de costantes 
+        # Construir la matriz de 9x12 elementos Estacion leyendo el mapa de constantes 
         self.__tablero = []
         for fila in range(len(MAPA_COCINA)):
             fila_estaciones = []
@@ -53,7 +53,7 @@ class Cocina:
     def dibujar(self):
         """Dibujar el tablero superior, todas las estaciones y los dos chefs."""
         # 1. Fondo oscuro (color 1) para el tablero superior donde iran pedidos y puntos
-        pyxel.rect(0, 0, ANCHO_VENTANA, ALTO_TABLERO, 1)
+        pyxel.rect(0, 0, ANCHO_PANTALLA, ALTO_TABLERO, 1)
         pyxel.text(6, 12, f"PUNTOS: {self.__puntuacion}", 7)
 
         # 2. Dibujar las 108 casillas del mapa recorriendo cada fila y estacion 
